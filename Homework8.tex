@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr, lastpage}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb,amsthm}
+\usetikzlibrary{calc}
+\usepackage{enumitem}
+\usepackage{soul}
+\usepackage{multicol}
+
+% Universes
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+% Groups commands
+\newcommand{\inv}{^{-1}}
+\newcommand{\lcm}{\mathrm{lcm}}
+\newcommand{\lr}[1]{\langle #1 \rangle}
+\newcommand{\Inn}{\mathrm{Inn}}
+\newcommand{\iso}{\cong}
+\newcommand{\normal}{\triangleleft}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{0cm}
+\pagestyle{fancy}
+\lhead{MATH458 Abstract Algebra}
+\rhead{Homework 8}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\section*{Homework 8}
+
+Unless otherwise indicated, you must justify all answers/steps. See the Canvas assignment for more information about the homework requirements. 
+
+\begin{enumerate}
+    \item Prove proposition 6.6 from the Module 6 notes.
+    
+        \textbf{Proposition 6.6} (Properties of Multiplication in Rings). Let $a,b,c$ belong to a ring $R$. Then 
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item $a0=0a=0$
+                \item $a(-b)=(-a)(b)=-(ab)$
+                \item $(-a)(-b)=(ab)$
+                \item $a(b-c)=ab-ac$ and $(b-c)a=ba-ca$
+                
+            \columnbreak
+                
+            \hspace{-2em}If $R$ has a unity element $1$, then 
+                \item $(-1)a=-a$
+                \item $(-1)(-1)=1$
+                \vspace*{2em}
+            \end{enumerate}
+        \end{multicols}
+
+     \item Suppose that $a$ and $b$ belong to a commutative ring $R$ with unity. If $a$ is a unit and $b^2=0$, show that $a+b$ is a unit.
+     
+
+     \item The set $\RR[x]$ of all polynomials in the variable $x$ with real coefficients under ordinary addition and multiplication is a commutative ring.
+     \begin{enumerate}
+        \item What is unity in $\RR[x]$? What are the units of $\RR[x]$? Explain. 
+        
+
+        \item Show that $\ZZ[x]$ forms a subring of $R$, where $\ZZ[x]$ is the subset of $\RR[x]$ with integer coefficients. 
+        
+
+     \end{enumerate}
+
+
+    \item An element $a$ in a ring $R$ with unity is called \emph{nilpotent} if there exists a positive integer $n$ such that $a^n=0$. 
+    \begin{enumerate}
+        \item Give an example of a nontrivial ring $R$ and a nonzero nilpotent element $a$.
+        
+
+        \item Show that for an arbitrary ring $R$ with unity, if $a$ is a nilpotent element of $R$, then $1-a$ is a unit. (Hint: Consider $(1-a)(1+a+a^2+\cdots + a^{n-1})$.)
+        
+
+        \item Show that for a \emph{commutative} ring $R$ with unity, the set of nilpotent elements forms a subring.
+        
+
+        
+    \end{enumerate}
+
+
+    \item Let $R$ and $S$ be commutative rings. Prove that $(a,b)$ is a zero-divisor in $R\oplus S$ if and only if $a$ or $b$ is a zero-divisor or exactly one of $a$ or $b$ is 0. 
+    
+\end{enumerate}
+\end{document}
